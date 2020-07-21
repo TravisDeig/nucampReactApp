@@ -32,16 +32,10 @@ function Home(props) {
                     />
                 </div>
                 <div className="col-md m-1">
-                    <RenderCard item={props.promotion}
-                        isLoading={props.campsitesLoading}
-                        errMess={props.campsitesErrMess}
-                    />
+                    <RenderCard item={props.promotion} />
                 </div>
                 <div className="col-md m-1">
-                    <RenderCard item={props.partner}
-                        isLoading={props.campsitesLoading}
-                        errMess={props.campsitesErrMess}
-                    />
+                    <RenderCard item={props.partner} />
                 </div>
             </div>
         </div>

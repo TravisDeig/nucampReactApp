@@ -16,9 +16,9 @@ export const ConfigureStore = () => {
             comments: Comments,
             partners: Partners,
             promotions: Promotions,
-            ...creatForms({
-                feedbackForm: InitialFeedback
-            })
+            // ...creatForms({
+            //     feedbackForm: InitialFeedback
+            // })
         }),
         applyMiddleware(thunk, logger)
     );

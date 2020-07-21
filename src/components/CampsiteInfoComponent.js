@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 
-const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
 const minLength = len => val => val && (val.length >= len);
 
@@ -72,11 +71,11 @@ class CommentForm extends React.Component {
                                 </Control.select>
                                 <Label htmlFor="author">Your Name</Label>
                                 <Control.text model=".author" name="author" id="author" placeholder="Your Name" className="form-control"
-                                    validators={{
-                                        required,
-                                        minLength: minLength(2),
-                                        maxLength: maxLength(15)
-                                    }}
+                                    // validators={{
+                                    //     required,
+                                    //     minLength: minLength(2),
+                                    //     maxLength: maxLength(15)
+                                    // }}
                                 />
                                 <Errors
                                     className="text-danger"
